@@ -13,7 +13,7 @@ const Header = () => {
             </Link>
           </NavHold>
 
-          <Logo>Uchenna Austine</Logo>
+          <Logo>Uchenna <span>Austine</span></Logo>
 
           <Link to="/Input" style={{ textDecoration: "none", color: "black" }}>
             <Button>Add Task</Button>
@@ -37,7 +37,11 @@ const Button = styled.div`
 
 const Logo = styled.div`
   font-weight: 700;
-  font-size: 18px;
+  font-size: 25px;
+
+  span{
+    color: darkorange;
+  }
 `;
 
 const Nav = styled.div`
