@@ -1,7 +1,9 @@
 import React from "react";
 import {createBrowserRouter} from "react-router-dom";
 import Layout from "../Components/Static/Layout";
-import LandingPage from "../Pages/LandingPage";
+import HomeScreen from "../Pages/HomeScreen";
+import InputScreen from "../Pages/InputScreen";
+
 
 export const mainRoute = createBrowserRouter([{
     path: "/",
@@ -9,7 +11,10 @@ export const mainRoute = createBrowserRouter([{
     children: [
         {
             index: true,
-            element: <LandingPage/>
+            element: <HomeScreen/>
+        },{
+            path: "/Input",
+            element: <InputScreen/>
         }
     ]
 }])
