@@ -27,7 +27,12 @@ const Task = styled.div`
 
 const Card = styled.div``;
 
-const Title = styled.div``;
+const Title = styled.div`
+
+`;
 
 const Main = styled.div`
+width: 300px;
+border: 1px solid black;
+border-radius: 3px;
 `;
