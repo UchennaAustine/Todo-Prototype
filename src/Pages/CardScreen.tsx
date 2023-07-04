@@ -1,11 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
+import {IData} from "../utils/Interfaces"
 
-const CardScreen = () => {
+const CardScreen:React.FC<IData> = ({title, data}) => {
   return (
     <div>
         <Main>
-            <Title>Title</Title>
+            <Title>{title}</Title>
             <Card>
                 <Task>Task</Task>
                 <Move>Move to Progress</Move>
@@ -28,7 +29,7 @@ const Task = styled.div`
 const Card = styled.div``;
 
 const Title = styled.div`
-
+background-color: lightcoral;
 `;
 
 const Main = styled.div`

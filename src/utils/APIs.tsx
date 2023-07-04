@@ -12,3 +12,13 @@ export const createTask = async(data: any)=>{
         console.log(error.message)
     }
 }
+
+export const readTask = async ()=>{
+    try {
+         await axios.get(URL).then((res)=>{
+           return res.data
+        })
+    } catch (error: any) {
+        console.log(error.message)
+    }
+}

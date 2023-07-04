@@ -1,12 +1,21 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import CardScreen from './CardScreen'
 import styled from 'styled-components'
+import { readTask } from '../utils/APIs'
 
 const HomeScreen = () => {
+    const [state, setState] = useState<any>([])
+    const [stateI, setStateI] = useState<any>([])
+
+    // useEffect(()=>{
+    //     readTask().then((res))
+    // })
   return (
     <div>
         <Container>
-        <CardScreen/>
+        <CardScreen
+        // title=""
+        />
         </Container>
     </div>
   )
